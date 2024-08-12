@@ -1,21 +1,16 @@
 import { Link } from 'react-router-dom'
 
-function PetCard( { breed, photo }) {
-
+function PetCard({ breed, photo }) {
   console.log(breed)
   return (
     <div>
-      <article>
-        <h2> Breed
-          <ul>
-            {breed}
-          </ul>  
-          <image src={photo}>
-            
-          </image>
-        </h2>
-        <Link to={`/src/page/Home.js${breed}`} />
-      </article>
+      <Link to={`/pets/${breed}`}>
+        <article>
+          
+          <h2> {breed} </h2>  
+        </article>
+      </Link>
+          <img class="photo-square" src={photo} alt={breed} />
     </div>
   )
 }

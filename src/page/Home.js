@@ -27,7 +27,7 @@ function Home() {
             Home Page
         </h1>
         {
-            animals.map((animal) => <PetCard breed={animal.breed} photo={animal} key={animal.breed}  />)
+            animals.map((animal) => <PetCard breed={animal.breed} photo={animal.photo} key={animal.breed}  />)
         }
     </main>
 

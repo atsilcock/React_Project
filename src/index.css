@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.photo-square {
+  position: relative;
+  width: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  border: 10px color- blue
+  
+  
+  
+}
