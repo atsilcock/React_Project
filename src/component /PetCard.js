@@ -1,13 +1,23 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Home() {
+function PetCard( { breed, photo }) {
+
+  console.log(breed)
   return (
     <div>
-      <h1>
-        Hello
-      </h1>
+      <article>
+        <h2> Breed
+          <ul>
+            {breed}
+          </ul>  
+          <image src={photo}>
+            
+          </image>
+        </h2>
+        <Link to={`/src/page/Home.js${breed}`} />
+      </article>
     </div>
   )
 }
 
-export default Home
+export default PetCard

@@ -14,13 +14,13 @@ function NavBar() {
         to="/adoptnow"
         
        >
-        AdoptNow
+        Adopt Now
       </NavLink> 
       <NavLink
         to="/animalHistory"
         
       >
-        AnimalHistory
+        Animal History
       </NavLink>
 
     </nav>

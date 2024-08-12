@@ -1,7 +1,7 @@
-import AdoptNow from "./pages/AdoptNow"
-import AnimalHistory from "./pages/AnimalHistory"
-import Home from "./pages/Home"
-import Error from "./pages/Error"
+import AdoptNow from "./page/AdoptNow"
+import AnimalHistory from "./page/AnimalHistory"
+import Home from "./page/Home"
+import Error from "./page/Error"
 
 
 const routes = [
