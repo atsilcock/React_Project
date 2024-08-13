@@ -1,16 +1,28 @@
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+import AnimalHistory from "./AnimalHistory"
 
-function PetCard({ breed, photo, onClick }) {
-  return (
-    <div>
-      <Link to={`../page/AnimalHistory.js}`}>
-        <article onClick={onClick}>
-          <h2> {breed} </h2>  
-        </article>
-      </Link>
-          <img class="photo-square" src={photo} alt={breed} />
-    </div>
-  )
-}
+ function PetCard( { animal, clickedData, handleClick}) {
+    const [toggleButton, setToggleButton] = useState(false)
 
-export default PetCard
+    function myToggle(){
+        setToggleButton(!toggleButton)
+      }
+
+return( 
+
+<article key={animal.breed}> 
+    <ul 
+    href={animal.breed} > 
+    <h2> {animal.breed} </h2> 
+    <button onClick={myToggle}>History</button> 
+    {/* <button onClick={(event)=> handleClick(event, animal)}>History</button> */}
+    </ul>
+    {toggleButton ? <AnimalHistory clickedData={clickedData}/> : null}
+    <img className="photo-square" src={animal.photo}></img>
+</article>)
+
+
+ }
+
+
+export default PetCard 

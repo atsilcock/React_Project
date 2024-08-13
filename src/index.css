@@ -15,10 +15,8 @@ code {
 
 .photo-square {
   position: relative;
-  width: 25%;
+  
+  width: 15%;
+  height: 15%; /* Add this line to make the shape the same size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-  border: 10px color- blue
-  
-  
-  
 }
