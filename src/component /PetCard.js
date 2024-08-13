@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import AnimalHistory from "./AnimalHistory"
 
- function PetCard( { animal, clickedData, handleClick}) {
+ function PetCard( { animal, clickedData }) {
     const [toggleButton, setToggleButton] = useState(false)
 
     function myToggle(){
@@ -11,13 +11,11 @@ import AnimalHistory from "./AnimalHistory"
 return( 
 
 <article key={animal.breed}> 
-    <ul 
-    href={animal.breed} > 
+    <ul> 
     <h2> {animal.breed} </h2> 
     <button onClick={myToggle}>History</button> 
-    {/* <button onClick={(event)=> handleClick(event, animal)}>History</button> */}
     </ul>
-    {toggleButton ? <AnimalHistory clickedData={clickedData}/> : null}
+    {toggleButton ? <AnimalHistory animal={animal}/> : null}
     <img className="photo-square" src={animal.photo}></img>
 </article>)
 

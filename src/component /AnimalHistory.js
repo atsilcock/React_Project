@@ -1,28 +1,26 @@
 import React from 'react'
-import AdoptNow from "./AdoptNow"
 
-
- function AnimalHistory({  clickedData }) {
+ function AnimalHistory({  animal }) {
 
 function adoptNowButtonClick (event){
   event.preventDefault()
-  return console.log(event.target.value)
+  return event.target.value
   
 }
 
   function renderClick(){
-    if(clickedData) {
+    if(animal) {
       return (
         <ul>
-          <li>Name: {clickedData.name}</li>
-          <li> Breed: {clickedData.breed}</li>
-          <li> Breed Type: {clickedData.breedType}</li>
-          <li>Country of Origin: {clickedData.origin}</li>
-          <li>  Temperament: {clickedData.temperament}</li>
-          <li> Popularity 1-10: {clickedData.popularity}</li>
-          <li>Hypoallergenic: {clickedData.hypoallergenic}</li>
-          <li>Intelligence: {clickedData.intelligence}</li>
-          
+          <li>Name:{animal.name}</li>
+          <li> Breed: {animal.breed}</li>
+          <li> Breed Type: {animal.breedType}</li>
+          <li>Country of Origin: {animal.origin}</li>
+          <li>  Temperament: {animal.temperament}</li>
+          <li> Popularity 1-10: {animal.popularity}</li>
+          <li>Hypoallergenic: {animal.hypoallergenic}</li>
+          <li>Intelligence: {animal.intelligence}</li>
+          <button onClick={adoptNowButtonClick}>Adopt Now </button>
         </ul>
       )
     }
@@ -33,7 +31,7 @@ function adoptNowButtonClick (event){
     <div>
       <main>
         {renderClick()} 
-        <AdoptNow adoptNowButtonClick={adoptNowButtonClick} /> 
+        <AdoptNow adoptNowButtonClick={adoptNowButtonClick} renderClick={renderClick}/> 
       </main>
     </div>
   )

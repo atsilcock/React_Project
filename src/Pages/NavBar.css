@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-beteen;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px;
+    
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.navbar-button {
+    border: none;
+    border-radius: 50%;
+    background-color: lightblue;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 5px; /* Add spacing between buttons */
+}
+
+.navbar-button:hover {
+    background-color: darkblue;
+}
+
+.navbar-button:hover {
+    background-color: darkblue;
+}
+
+.navbar-button {
+    border: none;
+    border-radius: 50%;
+    background-color: lightblue;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background-color: darkblue;
+}
+
+}
