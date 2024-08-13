@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 
-function PetCard({ breed, photo }) {
+function PetCard({ breed, photo, onClick }) {
   return (
     <div>
-      <Link to={`/pets/${breed}`}>
-        <article>
-          
+      <Link to={`../page/AnimalHistory.js}`}>
+        <article onClick={onClick}>
           <h2> {breed} </h2>  
         </article>
       </Link>
