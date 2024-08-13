@@ -10,18 +10,21 @@ function NavBar() {
       >
         Home
       </NavLink>
-      <NavLink
-        to="/adoptnow"
-        
-       >
-        Adopt Now
-      </NavLink> 
+      
       <NavLink
         to="/animalHistory"
         
       >
         Animal History
       </NavLink>
+      
+      <NavLink
+        to="/adoptnow"
+        
+       >
+        Adopt Now
+      </NavLink> 
+    
 
     </nav>
     );

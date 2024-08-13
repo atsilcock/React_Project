@@ -14,9 +14,6 @@ function Home() {
     },[])
 
 
-
-
-
   return (
     <div>
     <header>
